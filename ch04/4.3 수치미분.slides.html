@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/emotionalcode/deep-learning-from-scratch/f841c57a/presentation/reveal.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/emotionalcode/deep-learning-from-scratch/f841c57a/presentation/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -11890,7 +11890,7 @@ a.anchor-link {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/emotionalcode/deep-learning-from-scratch/f841c57a/presentation/custom.css">
+<link rel="stylesheet" href="custom.css">
 
 </head>
 
@@ -13100,7 +13100,7 @@ y = ax^n \to \frac{\delta y}{\delta x} = nax^{n-1}
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>후방차분 / 전방차분 / 중심차분
-<img src="img5.png" alt="image.png"></p>
+<img src="https://github.com/emotionalcode/deep-learning-from-scratch/blob/master/ch04/image14.png?raw=true" alt="img" style="width:90%;" /></p>
 
 </div>
 </div>
@@ -15596,8 +15596,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://cdn.rawgit.com/emotionalcode/deep-learning-from-scratch/f841c57a/presentation/head.min.js",
-      "https://cdn.rawgit.com/emotionalcode/deep-learning-from-scratch/f841c57a/presentation/reveal.js"
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -15614,7 +15614,7 @@ require(
             dependencies: [
                 { src: "reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "https://cdn.rawgit.com/emotionalcode/deep-learning-from-scratch/f841c57a/presentation/notes.js",
+                { src: "reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
